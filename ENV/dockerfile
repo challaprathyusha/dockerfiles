@@ -1,0 +1,6 @@
+FROM almalinux:9
+RUN dnf install nginx -y
+EXPOSE 80/TCP
+ENV trainer="sivakumar" \
+    course="devops" \
+    duration="120hrs"
