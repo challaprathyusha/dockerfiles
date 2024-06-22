@@ -1,0 +1,3 @@
+FROM almalinux:9
+ADD https://raw.githubusercontent.com/challaprathyusha/expensesproject/main/archivingfiles.sh /tmp/archivingfiles.sh 
+CMD [ "sleep","100" ]
