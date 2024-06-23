@@ -1,6 +1,8 @@
 FROM almalinux:9
+ENV DIRPATH=/app1
 RUN mkdir /app
 #RUN cd /app
 WORKDIR /app
+WORKDIR ${DIRPATH}
 RUN pwd
 CMD [ "sleep","100" ] 
