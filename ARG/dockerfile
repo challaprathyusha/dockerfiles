@@ -1,4 +1,7 @@
 ARG version
 FROM almalinux:${version:-8}
 RUN cat /etc/*release
+ARG course
+ARG duration
+RUN echo "course:${course}, duration:${duration}"
 CMD [ "sleep","100" ]
