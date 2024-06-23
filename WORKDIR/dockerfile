@@ -1,5 +1,5 @@
 FROM almalinux:9
-ENV DIRPATH=/app1
+ENV DIRPATH=app1
 RUN mkdir /app
 #RUN cd /app
 WORKDIR /app
