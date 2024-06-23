@@ -1,7 +1,7 @@
 ARG version
 FROM almalinux:${version:-8}
 RUN cat /etc/*release
-ARG course
-ARG duration
+ARG course=docker
+ARG duration=10
 RUN echo "course:${course}, duration:${duration}"
 CMD [ "sleep","100" ]
