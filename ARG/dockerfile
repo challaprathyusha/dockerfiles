@@ -6,5 +6,7 @@ ARG duration=10
 ENV trainer=shiva
 ARG student=prathyusha
 ENV student=$student
+ARG days
+ENV days=${days:-120}
 RUN echo "course:${course}, duration:${duration}, trainer:${trainer}, student:${student}"
 CMD [ "sleep","100" ]
