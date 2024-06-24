@@ -4,5 +4,7 @@ RUN cat /etc/*release
 ARG course=docker
 ARG duration=10
 ENV trainer=shiva
-RUN echo "course:${course}, duration:${duration}, trainer:${trainer}"
+ARG student=prathyusha
+ENV student=$student
+RUN echo "course:${course}, duration:${duration}, trainer:${trainer}, student:${student}"
 CMD [ "sleep","100" ]
